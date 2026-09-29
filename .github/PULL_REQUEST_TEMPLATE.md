@@ -14,7 +14,7 @@ Closes #
 
 ## How it was verified
 
-<!-- What you actually ran or inspected. Name it — a green pipeline is not by
+<!-- What you actually ran or inspected. Name it. A green pipeline is not by
      itself evidence that the change does what it should. -->
 
 ## Risk

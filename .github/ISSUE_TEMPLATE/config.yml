@@ -1,11 +1,11 @@
 # NOTE: blank_issues_enabled: false does NOT hide the blank-issue option from
-# people with Write, Maintain or Admin on the repo — they still see it, marked
+# people with Write, Maintain or Admin on the repo. They still see it, marked
 # "Maintainers only". It only removes it for Read and Triage contributors.
 blank_issues_enabled: false
 contact_links:
   - name: Security vulnerability
     url: https://github.com/TehCLabs/.github/blob/main/SECURITY.md
-    about: Do not open an issue. Email maimul@tehclabs.my — see the security policy.
+    about: Do not open an issue. Email maimul@tehclabs.my. See the security policy.
   - name: General enquiry
     url: https://tehclabs.my/#contact
     about: Not a bug and not a feature? Use the contact form on the company site.

@@ -4,8 +4,8 @@ Teh C Labs repositories are private and we do not accept external pull
 requests. This document records the conventions our engineers work to, so they
 are written down rather than assumed.
 
-If you have found a security issue, follow [SECURITY.md](SECURITY.md) instead —
-not an issue, not a pull request.
+If you have found a security issue, follow [SECURITY.md](SECURITY.md) instead.
+Do not open an issue or a pull request for it.
 
 ## Branches and pull requests
 
@@ -23,7 +23,7 @@ reaches the default branch by another route, close the issue explicitly.
 
 ## Commits
 
-Conventional-commit prefixes — `feat:`, `fix:`, `chore:`, `docs:` — in the
+Conventional-commit prefixes (`feat:`, `fix:`, `chore:`, `docs:`) in the
 subject. Explain *why* in the body; the diff already shows what.
 
 ## Issues

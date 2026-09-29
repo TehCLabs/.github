@@ -24,9 +24,9 @@ body:
     attributes:
       label: How much does this matter
       options:
-        - "P1 — required for the product to do its job"
-        - "P2 — meaningful quality of life"
-        - "P3 — nice to have"
+        - "P1: required for the product to do its job"
+        - "P2: meaningful quality of life"
+        - "P3: nice to have"
     validations: {required: true}
   - type: textarea
     id: done

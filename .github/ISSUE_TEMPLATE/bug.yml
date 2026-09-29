@@ -38,10 +38,10 @@ body:
     attributes:
       label: How bad is it
       options:
-        - "P0 — blocking, or data is wrong in production"
-        - "P1 — a real workflow is broken, no workaround"
-        - "P2 — annoying, there is a workaround"
-        - "P3 — cosmetic or rare"
+        - "P0: blocking, or data is wrong in production"
+        - "P1: a real workflow is broken, no workaround"
+        - "P2: annoying, there is a workaround"
+        - "P3: cosmetic or rare"
     validations: {required: true}
   - type: input
     id: where
