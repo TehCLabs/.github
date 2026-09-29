@@ -1,4 +1,4 @@
-# Teh C Labs
+# Teh C LABS
 
 We build operations software for businesses that run on people, buildings and
 schedules — the work that usually lives in a WhatsApp group and a spreadsheet.
