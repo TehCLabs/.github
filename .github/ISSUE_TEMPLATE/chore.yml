@@ -1,0 +1,21 @@
+name: Chore
+description: Maintenance, refactor, dependency, docs or infrastructure work
+labels: ["needs-triage"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What needs doing
+    validations: {required: true}
+  - type: textarea
+    id: why-now
+    attributes:
+      label: Why now
+      description: What gets worse if this waits? Chores without this answer tend to sit open for a year.
+    validations: {required: true}
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Surface
+      options: [Backend, Web, Mobile, Infra, Docs]
+    validations: {required: true}

@@ -1,0 +1,64 @@
+name: Bug
+description: Something built is behaving wrong
+labels: ["needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For a **security** problem, stop and email <maimul@tehclabs.my> instead.
+        Do not file it here.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you observed, not what you think caused it.
+    validations: {required: true}
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected instead
+    validations: {required: true}
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      value: |
+        1.
+        2.
+        3.
+    validations: {required: true}
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Surface
+      options: [Backend, Web, Mobile, Infra, Docs, "Not sure"]
+    validations: {required: true}
+  - type: dropdown
+    id: severity
+    attributes:
+      label: How bad is it
+      options:
+        - "P0 — blocking, or data is wrong in production"
+        - "P1 — a real workflow is broken, no workaround"
+        - "P2 — annoying, there is a workaround"
+        - "P3 — cosmetic or rare"
+    validations: {required: true}
+  - type: input
+    id: where
+    attributes:
+      label: Where
+      description: Environment, URL or build. Production or local?
+      placeholder: production · condo-os.my · build 1.4.2
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs, errors or screenshots
+      description: Paste the actual error text rather than describing it.
+      render: shell
+  - type: checkboxes
+    id: pii
+    attributes:
+      label: Before you submit
+      options:
+        - label: I have removed resident names, unit numbers, phone numbers and any other personal data from what I pasted above.
+          required: true

@@ -1,0 +1,35 @@
+name: Feature
+description: Something that should exist and does not
+labels: ["needs-triage"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: Describe the problem, not the feature. What is someone unable to do today, and what are they doing instead?
+    validations: {required: true}
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What you have in mind
+      description: Optional. A problem with no proposal is still a good issue.
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Surface
+      options: [Backend, Web, Mobile, Infra, Docs, "Not sure"]
+    validations: {required: true}
+  - type: dropdown
+    id: priority
+    attributes:
+      label: How much does this matter
+      options:
+        - "P1 — required for the product to do its job"
+        - "P2 — meaningful quality of life"
+        - "P3 — nice to have"
+    validations: {required: true}
+  - type: textarea
+    id: done
+    attributes:
+      label: How we would know it is done
+      description: What would you check to confirm it works?
