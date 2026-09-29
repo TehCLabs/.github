@@ -2,7 +2,7 @@
 
 ## Reporting a vulnerability
 
-**Email <maimul@tehclabs.my>.** Please do not open a public issue for a
+**Email <security@tehclabs.my>.** Please do not open a public issue for a
 security report, and please do not post one in a repository's discussions.
 
 Include what you need to make it reproducible: the affected host or endpoint,
