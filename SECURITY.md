@@ -18,9 +18,10 @@ something.
 | First assessment | within 10 working days |
 | Fix or a dated plan | communicated to you directly |
 
-We are a small team in Malaysia (UTC+8). If you have not heard back within the
-acknowledgement window, assume the mail went astray and send it again rather
-than assuming it was ignored.
+We operate from Malaysia (UTC+8) and respond on working days. If you have not
+received an acknowledgement within that window, please resend — mail does
+occasionally fail to arrive, and we would rather see a report twice than not
+at all.
 
 ## Scope
 

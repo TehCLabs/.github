@@ -1,48 +1,46 @@
 # Contributing
 
-Teh C Labs repositories are private and worked on by a small team. This file
-exists so the conventions are written down in one place rather than living in
-somebody's head.
+Teh C Labs repositories are private and we do not accept external pull
+requests. This document records the conventions our engineers work to, so they
+are written down rather than assumed.
+
+If you have found a security issue, follow [SECURITY.md](SECURITY.md) instead —
+not an issue, not a pull request.
 
 ## Branches and pull requests
 
 Branch from the repository's working branch, named `feat/…`, `fix/…`,
 `chore/…` or `docs/…`.
 
-Open a pull request even when you are working alone. The PR is where the
-reasoning gets recorded, and a repository's history is the only artefact that
-outlives the people who wrote it.
+Every change goes through a pull request. The pull request is where the
+reasoning is recorded: the diff shows what changed, and the description is the
+only place that explains why. A repository's history outlives the people who
+wrote it.
 
-**Closing keywords only work when the pull request targets the repository's
-default branch.** `Fixes #123` in a PR onto any other branch is ignored by
-GitHub — no link is created and merging closes nothing. If your repository
-merges through an integration branch, close issues by hand when the change
-reaches the default branch, and do not assume the keyword did it.
-
-## Status checks are not gates
-
-Our repositories are private on the GitHub Free plan, where rulesets and branch
-protection are unavailable. CI runs and reports; it **cannot** block a merge or
-a direct push.
-
-So a green check is information, not permission, and a red one stops nothing but
-you. Read the run. This changes the day the organization moves to a paid plan,
-and the intent is already written into each repository's `CODEOWNERS`.
+Link the issue the work belongs to. Closing keywords resolve an issue only when
+the pull request targets the repository's default branch; where a change
+reaches the default branch by another route, close the issue explicitly.
 
 ## Commits
 
-Conventional-commit prefixes (`feat:`, `fix:`, `chore:`, `docs:`) in the
-subject. Explain *why* in the body — the diff already shows what.
+Conventional-commit prefixes — `feat:`, `fix:`, `chore:`, `docs:` — in the
+subject. Explain *why* in the body; the diff already shows what.
 
 ## Issues
 
-Use the templates. Every issue carries a type, a priority and an area. Work that
-is not filed anywhere is work nobody can pick up, and a board that does not
-match reality is worse than no board.
+Use the templates. Every issue carries a type, a priority and an area, so that
+work can be found, prioritised and picked up by someone other than its author.
+
+## Verification
+
+Automated checks report; they do not substitute for judgement. A pull request
+states what was actually run or inspected, and what would break if the change
+is wrong. Claiming a check passed is not the same as having verified the
+behaviour it was meant to cover.
 
 ## Definition of done
 
-Merged is not done. Done is the change verified where it runs, the tracking
-file updated in the same change, and anything user-facing confirmed on
-production rather than locally. Repositories that state a stricter bar in their
-own `CLAUDE.md` or `README.md` override this one.
+Merged is not done. Done is the change verified where it runs, its tracking
+record updated in the same change, and anything user-facing confirmed in
+production rather than locally. A repository that sets a stricter bar in its
+own documentation overrides this one.
