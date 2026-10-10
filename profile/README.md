@@ -4,18 +4,23 @@
 </picture>
 
 
-We build operations software for businesses that run on people, buildings and
-schedules. The work that usually lives in a WhatsApp group and a spreadsheet.
+**Crafted around the people who use it.**
 
-Everything listed here is built and running. Nothing on this page is a plan.
+Teh C Labs is a software design studio in Kuala Lumpur. We are rarely the
+first to solve a problem. We aim to be the first to solve it properly. Every
+system starts with a person, so we study how they really work, design around
+them, and choose the technology last. Then we build it, run it and keep
+refining it.
 
-| | |
-|---|---|
-| **CondoOS** | Condominium operations: visitors, bookings, payments, complaints, announcements, parcels, patrols and committee reporting, across a web console and mobile apps. |
-| **BarberOS** | Barbershop operations: bookings, walk-in queue, POS, CRM and analytics. |
+Status is stated plainly.
+
+| | | |
+|---|---|---|
+| **[CondoOS](https://condo-os.my)** | Built and running | Condominium operations: billing and collections, complaints, facility bookings, visitors and parcels, maintenance rounds and committee governance. |
+| **BarberOS** | In development | Barbershop operations: online booking, the walk-in queue, payment at the counter, customer history and the day's takings. |
 
 Our repositories are private. This one is public because GitHub serves an
-organization's shared issue templates, security policy and profile from a repo
+organisation's shared issue templates, security policy and profile from a repo
 named `.github`, and that repo cannot be private.
 
 - Company site: <https://tehclabs.my>
