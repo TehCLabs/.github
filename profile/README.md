@@ -1,8 +1,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="teh-c-labs-lockup-dark.png">
-  <img src="teh-c-labs-lockup-light.png" alt="Teh C LABS" width="420">
+  <img src="teh-c-labs-lockup-light.png" alt="Teh C Labs" width="420">
 </picture>
-
 
 **Crafted around the people who use it.**
 
@@ -18,6 +17,7 @@ Status is stated plainly.
 |---|---|---|
 | **[CondoOS](https://condo-os.my)** | Built and running | Condominium operations: billing and collections, complaints, facility bookings, visitors and parcels, maintenance rounds and committee governance. |
 | **BarberOS** | In development | Barbershop operations: online booking, the walk-in queue, payment at the counter, customer history and the day's takings. |
+| **TrafficOS** | Exploring | An early look at traffic and enforcement operations. Nothing is built yet. |
 
 Our repositories are private. This one is public because GitHub serves an
 organisation's shared issue templates, security policy and profile from a repo
