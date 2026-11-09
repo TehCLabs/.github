@@ -1,0 +1,32 @@
+name: Text check
+
+# Everything in this repository is public, so its text is checked on every
+# pull request to main. The checks live in scripts/preflight.sh, which is
+# also how to run them locally: the brand check script and its tests (it
+# scans the profile), then the same em dash, retired-phrase and banned-word
+# rules over every other Markdown file and .github/.
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened, ready_for_review]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: text-check-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: brand and text check
+    if: github.event_name != 'pull_request' || !github.event.pull_request.draft
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Brand and text check
+        run: ./scripts/preflight.sh

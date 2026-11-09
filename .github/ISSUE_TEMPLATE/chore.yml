@@ -19,3 +19,12 @@ body:
       label: Surface
       options: [Backend, Web, Mobile, Infra, Docs]
     validations: {required: true}
+  - type: dropdown
+    id: priority
+    attributes:
+      label: How much does this matter
+      options:
+        - "P1: something breaks or stays at risk until this is done"
+        - "P2: it gets worse if it waits"
+        - "P3: nice to have"
+    validations: {required: true}

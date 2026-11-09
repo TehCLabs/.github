@@ -9,17 +9,16 @@ Do not open an issue or a pull request for it.
 
 ## Branches and pull requests
 
-Branch from the repository's working branch, named `feat/…`, `fix/…`,
-`chore/…` or `docs/…`.
+Branch from `main`, named `feat/…`, `fix/…`, `chore/…` or `docs/…`, and open
+the pull request against `main`. Nothing is committed to `main` directly.
 
 Every change goes through a pull request. The pull request is where the
 reasoning is recorded: the diff shows what changed, and the description is the
 only place that explains why. A repository's history outlives the people who
 wrote it.
 
-Link the issue the work belongs to. Closing keywords resolve an issue only when
-the pull request targets the repository's default branch; where a change
-reaches the default branch by another route, close the issue explicitly.
+Link the issue the work belongs to with a closing keyword in the description
+(`Closes #12`), so that merging the pull request closes it.
 
 ## Commits
 
@@ -28,8 +27,22 @@ subject. Explain *why* in the body; the diff already shows what.
 
 ## Issues
 
-Use the templates. Every issue carries a type, a priority and an area, so that
-work can be found, prioritised and picked up by someone other than its author.
+Use the templates: bug, feature or chore. Each one labels the issue
+`needs-triage` and asks for a surface (backend, web, mobile, infra or docs)
+and a priority as form fields, so that work can be found, prioritised and
+picked up by someone other than its author.
+
+## Where status lives
+
+An issue's status (planned, in progress, in review, done) lives on the
+organisation's project board, and only there. Repositories do not keep it in
+tracking files, and a pull request description is not a status record.
+
+## Checks before a pull request
+
+Run `./scripts/preflight.sh` before committing. It runs the same checks a pull
+request to `main` gets: the brand check and its tests, and a scan of every
+Markdown file and `.github/` for em dashes and the wording we do not use.
 
 ## Verification
 
@@ -40,7 +53,7 @@ behaviour it was meant to cover.
 
 ## Definition of done
 
-Merged is not done. Done is the change verified where it runs, its tracking
-record updated in the same change, and anything user-facing confirmed in
-production rather than locally. A repository that sets a stricter bar in its
-own documentation overrides this one.
+Merged is not done. Done is the change verified where it runs, and anything
+user-facing confirmed in production rather than locally. Only then is the
+issue closed and its card moved to done. A repository that sets a stricter bar
+in its own documentation overrides this one.

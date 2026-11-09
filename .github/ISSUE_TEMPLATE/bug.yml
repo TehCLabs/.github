@@ -48,7 +48,7 @@ body:
     attributes:
       label: Where
       description: Environment, URL or build. Production or local?
-      placeholder: production · condo-os.my · build 1.4.2
+      placeholder: production · the page's URL · build 1.4.2
   - type: textarea
     id: evidence
     attributes:
@@ -60,5 +60,5 @@ body:
     attributes:
       label: Before you submit
       options:
-        - label: I have removed resident names, unit numbers, phone numbers and any other personal data from what I pasted above.
+        - label: I have removed names, addresses, phone numbers, email addresses, account or ID numbers and any other personal data from what I pasted above.
           required: true
