@@ -27,16 +27,22 @@ subject. Explain *why* in the body; the diff already shows what.
 
 ## Issues
 
-Use the templates. The template you pick sets the type: bug, feature or chore.
-Every template also asks for a surface (backend, web, mobile, infra or docs)
-and a priority, so that work can be found, prioritised and picked up by
-someone other than its author.
+Use the templates: bug, feature or chore. Each one labels the issue
+`needs-triage` and asks for a surface (backend, web, mobile, infra or docs)
+and a priority as form fields, so that work can be found, prioritised and
+picked up by someone other than its author.
 
 ## Where status lives
 
 An issue's status (planned, in progress, in review, done) lives on the
 organisation's project board, and only there. Repositories do not keep it in
 tracking files, and a pull request description is not a status record.
+
+## Checks before a pull request
+
+Run `./scripts/preflight.sh` before committing. It runs the same checks a pull
+request to `main` gets: the brand check and its tests, and a scan of every
+Markdown file and `.github/` for em dashes and the wording we do not use.
 
 ## Verification
 

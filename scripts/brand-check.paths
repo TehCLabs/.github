@@ -1,6 +1,6 @@
 # brand-check.sh scans page-type files only (locale catalogues, index.html,
 # llms.txt, robots.txt, security.txt, web manifests and profile/README.md),
 # and this file can only narrow that set. In this repo the set is the profile.
-# The "Other public text" step in .github/workflows/text-check.yml applies the
-# same rules to every other Markdown file and to .github/.
+# The "Other public text" step in scripts/preflight.sh applies the same rules
+# to every other Markdown file and to .github/.
 profile/
