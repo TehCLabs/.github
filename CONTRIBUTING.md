@@ -54,6 +54,7 @@ behaviour it was meant to cover.
 ## Definition of done
 
 Merged is not done. Done is the change verified where it runs, and anything
-user-facing confirmed in production rather than locally. Only then is the
-issue closed and its card moved to done. A repository that sets a stricter bar
-in its own documentation overrides this one.
+user-facing confirmed in production rather than locally. Only then is its card
+moved to Done; the issue itself closes when the pull request merges. A
+repository that sets a stricter bar in its own documentation overrides this
+one.
